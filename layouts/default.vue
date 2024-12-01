@@ -4,10 +4,11 @@
 		<v-app-bar>
 			<v-app-bar-nav-icon @click="toggleDrawer" />
 			<!-- <v-img
+				class="ml-6"
 				:src="
 					theme === 'light'
-						? '/TPLogoFullBlack256.png'
-						: '/TPLogoFullWhite256.png'
+						? '/imgs/TPLogoFullBlack256.png'
+						: '/imgs/TPLogoFullWhite256.png'
 				"
 				max-height="auto"
 				max-width="256"

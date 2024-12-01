@@ -5,7 +5,14 @@ export function useNavigation() {
 
 	const devNavItems = [];
 
-	const marketNavItems = [];
+	const marketNavItems = [
+		{
+			title: 'Stream Goodies',
+			description: 'Download free resources for your streams',
+			to: '/goodies',
+			prependIcon: 'mdi-gift-outline',
+		},
+	];
 
 	const toggleDrawer = () => {
 		isDrawerOpen.value = !isDrawerOpen.value;
