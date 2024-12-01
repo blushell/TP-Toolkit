@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 		static: true,
 	}, */
 	app: {
-		baseURL: '/tp-toolkit/',
+		baseURL: '/Touch-Portal-Kit/',
 		head: {
 			title: 'Touch Portal Toolkit',
 			meta: [
