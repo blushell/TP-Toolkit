@@ -72,9 +72,7 @@
 						<label class="text-body-2 mb-1 d-block">
 							Background Color [Preview Only]
 						</label>
-						<client-only>
-							<v-color-picker v-model="packData.bgcolor" mode="hex" />
-						</client-only>
+						<v-color-picker v-model="packData.bgcolor" mode="hex" />
 						<v-checkbox
 							v-model="packData.resize"
 							label="Resize (256x256)"

@@ -1,7 +1,21 @@
 export function useNavigation() {
 	const isDrawerOpen = ref(false);
 
-	const mainNavItems = [];
+	const mainNavItems = [
+		{
+			title: 'Icon Maker',
+			description:
+				'Design beautiful custom icons for your Touch Portal buttons',
+			to: '/iconmaker',
+			prependIcon: 'mdi-brush-variant',
+		},
+		{
+			title: 'Pack Builder',
+			description: 'Create and manage Touch Portal icon packs with ease',
+			to: '/packmaker',
+			prependIcon: 'mdi-folder-heart-outline',
+		},
+	];
 
 	const devNavItems = [];
 

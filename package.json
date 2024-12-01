@@ -12,12 +12,15 @@
 	"dependencies": {
 		"@mdi/font": "^7.4.47",
 		"canvas-confetti": "^1.9.3",
+		"file-saver": "^2.0.5",
+		"jszip": "^3.10.1",
 		"nuxt": "^3.14.1592",
 		"vue": "latest",
 		"vue-router": "latest",
 		"vuetify": "^3.7.4"
 	},
 	"devDependencies": {
+		"@types/file-saver": "^2.0.7",
 		"sass": "^1.81.0"
 	},
 	"packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
