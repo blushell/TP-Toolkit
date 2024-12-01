@@ -11,9 +11,27 @@ export function useNavigation() {
 		},
 		{
 			title: 'Pack Builder',
-			description: 'Create and manage Touch Portal icon packs with ease',
+			description: 'Create and manage your Touch Portal icon packs with ease',
 			to: '/tools/packmaker',
 			prependIcon: 'mdi-folder-heart-outline',
+		},
+		{
+			title: 'Logger',
+			description: 'Pharse your Touch Portal log files for easy reading',
+			to: '/tools/logger',
+			prependIcon: 'mdi-bug-outline',
+		},
+		{
+			title: 'HTTP',
+			description: 'Test HTTP requests for your Touch Portal',
+			to: '/tools/portalman',
+			prependIcon: 'mdi-web',
+		},
+		{
+			title: 'OBS RAW',
+			description: 'Build OBS RAW commands for your Touch Portal',
+			to: '/tools/obsraw',
+			prependIcon: 'mdi-video',
 		},
 	];
 
