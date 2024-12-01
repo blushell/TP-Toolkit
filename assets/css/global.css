@@ -1,4 +1,10 @@
 /* assets/css/global.css */
+html,
+body {
+	overflow: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
 .v-snackbar__content {
 	display: flex;
 	justify-content: center;

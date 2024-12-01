@@ -12,9 +12,3 @@ useHead({
 	},
 });
 </script>
-<style>
-html,
-body {
-	overflow: auto;
-}
-</style>

@@ -20,23 +20,46 @@
 
 		<!-- Navigation Drawer -->
 		<v-navigation-drawer v-model="isDrawerOpen" temporary mobile>
-			<v-list>
-				<v-list-item
-					v-for="item in mainNavItems"
-					:key="item.title"
-					v-bind="item"
-				/>
+			<v-list v-model:opened="openGroups">
+				<v-list-item title="Home" to="/" prepend-icon="mdi-home" />
 
 				<v-divider class="my-2" />
 
-				<v-list-item
-					v-for="item in devNavItems"
-					:key="item.title"
-					v-bind="item"
-				/>
+				<!-- Main Group -->
+				<v-list-group value="tools">
+					<template v-slot:activator="{ props }">
+						<v-list-item
+							v-bind="props"
+							prepend-icon="mdi-tools"
+							title="TP Tools"
+						/>
+					</template>
 
-				<v-divider class="my-2" />
+					<v-list-item
+						v-for="item in mainNavItems"
+						:key="item.title"
+						v-bind="item"
+					/>
+				</v-list-group>
 
+				<!-- Dev Group -->
+				<v-list-group value="dev">
+					<template v-slot:activator="{ props }">
+						<v-list-item
+							v-bind="props"
+							prepend-icon="mdi-code-braces"
+							title="Plugin Dev"
+						/>
+					</template>
+
+					<v-list-item
+						v-for="item in devNavItems"
+						:key="item.title"
+						v-bind="item"
+					/>
+				</v-list-group>
+
+				<!-- Market Items -->
 				<v-list-item
 					v-for="item in marketNavItems"
 					:key="item.title"
@@ -113,6 +136,7 @@ const {
 	toggleDrawer,
 } = useNavigation();
 const { showScrollButton, scrollToTop } = useScroll();
+const openGroups = ref(['tools']);
 
 const socialLinks = [
 	{
