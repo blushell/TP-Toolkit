@@ -48,7 +48,7 @@ We 💖 contributions to this project! Here’s how you can get involved:
 
 ### 🐞 Reporting Issues
 
-If you encounter a 🐛 bug or have a 💡 suggestion for a new feature, please open an issue in the [Issues](https://github.com/your-repo-name/issues) tab. Provide as much 📄 detail as possible to help us understand and address the problem or idea.
+If you encounter a 🐛 bug or have a 💡 suggestion for a new feature, please open an issue in the [Issues](https://github.com/blushell/Touch-Portal-Kit/issues) tab. Provide as much 📄 detail as possible to help us understand and address the problem or idea.
 
 ### 📥 Submitting Pull Requests
 
@@ -61,6 +61,6 @@ If you encounter a 🐛 bug or have a 💡 suggestion for a new feature, please 
 
 ## 📧 Contact
 
-If you have any ❓ questions or need 🆘 assistance, feel free to reach out by creating an issue or contacting us through [our community page](#).
+If you have any ❓ questions or need 🆘 assistance, feel free to reach out by creating an issue or contacting us through [our community page](https://github.com/blushell/Touch-Portal-Kit/discussions).
 
 Thank you for contributing to the Touch Portal Tools community! 🙌
