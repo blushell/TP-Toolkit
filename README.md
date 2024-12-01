@@ -38,7 +38,7 @@ Below is the list of tools available in this repo along with their key ✨ featu
 
 ### 8. **🔗 Plugin Bundler**
 
-- [ ] Bundle and package 🔌 plugins for Touch Portal.
+- [x] Bundle and package 🔌 plugins for Touch Portal.
 
 ---
 
