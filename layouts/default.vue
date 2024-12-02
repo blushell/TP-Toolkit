@@ -7,8 +7,8 @@
 				class="ml-8"
 				:src="
 					theme === 'light'
-						? '/images/TPLogoFullBlack256.png'
-						: '/images/TPLogoFullWhite256.png'
+						? './images/TPLogoFullBlack256.png'
+						: './images/TPLogoFullWhite256.png'
 				"
 				max-height="auto"
 				max-width="256"
