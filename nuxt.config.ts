@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 		static: true,
 	}, */
 	app: {
-		baseURL: '/Touch-Portal-Kit/',
+		baseURL: '/TP-Toolkit/',
 		head: {
 			meta: [
 				{ charset: 'utf-8' },
