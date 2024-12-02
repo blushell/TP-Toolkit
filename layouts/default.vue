@@ -5,11 +5,7 @@
 			<v-app-bar-nav-icon @click="toggleDrawer" />
 			<v-img
 				class="ml-8"
-				:src="
-					theme === 'light'
-						? '/TP-Toolkit/img/TPLogoFullBlack256.png'
-						: '/TP-Toolkit/img/TPLogoFullWhite256.png'
-				"
+				:src="logoPath"
 				max-height="auto"
 				max-width="256"
 				contain
@@ -138,6 +134,15 @@ const {
 } = useNavigation();
 const { showScrollButton, scrollToTop } = useScroll();
 const openGroups = ref(['tools']);
+
+const config = useRuntimeConfig();
+const baseURL = config.public.baseURL || '';
+
+const logoPath = computed(() => {
+	return theme.value === 'light'
+		? `${baseURL}/img/TPLogoFullBlack256.png`
+		: `${baseURL}/img/TPLogoFullWhite256.png`;
+});
 
 const socialLinks = [
 	{
