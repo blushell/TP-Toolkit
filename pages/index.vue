@@ -68,7 +68,7 @@
 </template>
 <script setup>
 useHead({ title: `Home` });
-definePageMeta({ title: 'TP Toolkit' });
+/* definePageMeta({ title: '' }); */
 const { mainNavItems, devNavItems, marketNavItems } = useNavigation();
 
 // Filter out devkits from devNavItems

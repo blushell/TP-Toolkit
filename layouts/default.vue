@@ -3,8 +3,8 @@
 		<!-- App Bar -->
 		<v-app-bar>
 			<v-app-bar-nav-icon @click="toggleDrawer" />
-			<!-- <v-img
-				class="ml-6"
+			<v-img
+				class="ml-8"
 				:src="
 					theme === 'light'
 						? '/imgs/TPLogoFullBlack256.png'
@@ -13,7 +13,8 @@
 				max-height="auto"
 				max-width="256"
 				contain
-			></v-img> -->
+				@click="$router.push('/')"
+			></v-img>
 			<v-app-bar-title class="title">{{ pageTitle }}</v-app-bar-title>
 			<v-btn class="mr-2" :icon="themeIcon" @click="toggleTheme" />
 		</v-app-bar>
@@ -116,7 +117,7 @@
 					<span>Made with ❤️ by JonesTown</span>
 				</div>
 				<div class="text-caption text-center pb-2">
-					TP Tools is not associated nor created by TouchPortal
+					TP Toolkit is not associated nor created by Touch-Portal
 				</div>
 			</footer>
 		</v-main>
