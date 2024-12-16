@@ -17,7 +17,7 @@
 
 		<!-- Navigation Drawer -->
 		<v-navigation-drawer v-model="isDrawerOpen" temporary mobile>
-			<v-list v-model:opened="openGroups">
+			<v-list>
 				<v-list-item title="Home" to="/" prepend-icon="mdi-home" />
 
 				<!-- Main Group -->
@@ -55,14 +55,13 @@
 				</v-list-group>
 
 				<!-- Market Items -->
-				<v-list-group
-					v-model="openGroups"
-					value="market"
-					:prepend-icon="'mdi-storefront-outline'"
-					:title="'Goodies'"
-				>
+				<v-list-group value="market">
 					<template v-slot:activator="{ props }">
-						<v-list-item v-bind="props" />
+						<v-list-item
+							v-bind="props"
+							prepend-icon="mdi-storefront-outline"
+							title="Goodies"
+						/>
 					</template>
 
 					<v-list-item
@@ -142,7 +141,6 @@ const {
 	toggleDrawer,
 } = useNavigation();
 const { showScrollButton, scrollToTop } = useScroll();
-const openGroups = ref(['market']);
 
 const config = useRuntimeConfig();
 const baseURL = config.public.baseURL || '';
