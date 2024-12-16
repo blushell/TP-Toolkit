@@ -135,6 +135,7 @@ const openGroups = ref(['tools']);
 
 /* const config = useRuntimeConfig(); */
 const baseURL = import.meta.env.VITE_BASE_URL;
+console.log('Base URL:', baseURL);
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
