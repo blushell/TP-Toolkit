@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 		'@mdi/font/css/materialdesignicons.min.css',
 	],
 	app: {
-		baseURL: '/TP-Toolkit/',
+		baseURL: '/TP-Toolkit',
 		head: {
 			meta: [
 				{ charset: 'utf-8' },

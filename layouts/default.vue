@@ -138,9 +138,11 @@ const baseURL = import.meta.env.VITE_BASE_URL;
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
-		? `${baseURL}img/TPTK_Black.png`
-		: `${baseURL}img/TPTK_White.png`;
+		? `${baseURL}/img/TPTK_Black.png`
+		: `${baseURL}/img/TPTK_White.png`;
 });
+
+console.log('Logo Path:', logoPath.value);
 
 const socialLinks = [
 	{
