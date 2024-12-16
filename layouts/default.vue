@@ -4,14 +4,14 @@
 		<v-app-bar>
 			<v-app-bar-nav-icon @click="toggleDrawer" />
 			<v-img
-				class="ml-8"
+				class="ml-8 cursor-pointer"
 				:src="logoPath"
 				max-height="auto"
 				max-width="256"
 				contain
 				@click="$router.push('/')"
 			></v-img>
-			<v-app-bar-title class="title">{{ pageTitle }}</v-app-bar-title>
+			<v-app-bar-title class="subtitle">{{ pageTitle }}</v-app-bar-title>
 			<v-btn class="mr-2" :icon="themeIcon" @click="toggleTheme" />
 		</v-app-bar>
 
@@ -19,8 +19,6 @@
 		<v-navigation-drawer v-model="isDrawerOpen" temporary mobile>
 			<v-list v-model:opened="openGroups">
 				<v-list-item title="Home" to="/" prepend-icon="mdi-home" />
-
-				<v-divider class="my-2" />
 
 				<!-- Main Group -->
 				<v-list-group value="tools">
@@ -109,11 +107,11 @@
 
 			<!-- Footer -->
 			<footer class="d-flex flex-column">
-				<div class="d-flex align-center justify-center w-100 px-4 py-2">
+				<div class="d-flex align-center justify-center w-100">
 					<span>Made with ❤️ by JonesTown</span>
 				</div>
-				<div class="text-caption text-center pb-2">
-					TP Toolkit is not associated nor created by Touch-Portal
+				<div class="text-caption text-center pb-6">
+					TP Toolkit is not associated nor created by Touch Portal
 				</div>
 			</footer>
 		</v-main>
@@ -140,8 +138,8 @@ const baseURL = config.public.baseURL || '';
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
-		? `${baseURL}/img/TPLogoFullBlack256.png`
-		: `${baseURL}/img/TPLogoFullWhite256.png`;
+		? `${baseURL}/img/TPTK_Black.png`
+		: `${baseURL}/img/TPTK_White.png`;
 });
 
 const socialLinks = [
@@ -180,6 +178,11 @@ const socialLinks = [
 	background-clip: text;
 	color: transparent;
 	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 .heart-icon {

@@ -2,13 +2,13 @@ export function useNavigation() {
 	const isDrawerOpen = ref(false);
 
 	const mainNavItems = [
-		{
+		/* {
 			title: 'Icon Maker',
 			description:
 				'Design beautiful custom icons for your Touch Portal buttons',
 			to: '/tools/iconmaker',
 			prependIcon: 'mdi-brush-variant',
-		},
+		}, */
 		{
 			title: 'Pack Builder',
 			description: 'Create and manage your Touch Portal icon packs with ease',
@@ -54,12 +54,12 @@ export function useNavigation() {
 			to: '/plugin/bundler',
 			prependIcon: 'mdi-package-variant-closed',
 		},
-		{
+		/* {
 			title: 'Plugin Devkits',
 			description: 'Community development plugintoolkits',
 			to: '/plugin/devkits',
 			prependIcon: 'mdi-toolbox',
-		},
+		}, */
 	];
 
 	const marketNavItems = [

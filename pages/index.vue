@@ -1,13 +1,5 @@
 <template>
 	<v-container fluid>
-		<div class="text-center mb-4 pb-1">
-			<h1 class="title">TP Toolkit</h1>
-			<p class="text-subtitle-1">
-				Essential tools made for Touch Portal plugin development and content
-				creation
-			</p>
-		</div>
-
 		<div class="sections my-8">
 			<!-- Creation Tools Section -->
 			<section class="mb-16">
@@ -68,7 +60,10 @@
 </template>
 <script setup>
 useHead({ title: `Home` });
-/* definePageMeta({ title: '' }); */
+definePageMeta({
+	title:
+		'Essential tools made for Touch Portal plugin development and content creation',
+});
 const { mainNavItems, devNavItems, marketNavItems } = useNavigation();
 
 // Filter out devkits from devNavItems
@@ -76,19 +71,6 @@ const filteredDevNavItems = devNavItems.filter((item) => !item.isLink);
 </script>
 
 <style scoped>
-.title {
-	font-size: 3rem;
-	background-image: linear-gradient(12deg, #00c6ff, #001f5c);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	font-weight: 700;
-}
-
-h2 {
-	font-size: 1.8rem;
-}
-
 .tools-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

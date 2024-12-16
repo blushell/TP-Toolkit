@@ -123,7 +123,7 @@
 								class="image-item"
 							>
 								<img :src="image.preview" alt="Icon preview" />
-								<div class="image-overlay" @click="confirmRemoveImage(index)">
+								<div class="remove-icon" @click="confirmRemoveImage(index)">
 									<v-icon icon="mdi-delete" color="white" />
 								</div>
 							</div>
@@ -373,7 +373,26 @@ const addImageToZip = async (zip, image) => {
 	object-fit: contain;
 }
 
-/* .image-overlay {
+.remove-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 2px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.image-item:hover .remove-icon {
+	opacity: 1;
+}
+
+.image-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -386,9 +405,9 @@ const addImageToZip = async (zip, image) => {
 	opacity: 0;
 	transition: opacity 0.3s;
 	cursor: pointer;
-} */
+}
 
-.image-overlay {
+/* .image-overlay {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -403,7 +422,7 @@ const addImageToZip = async (zip, image) => {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-}
+} */
 
 .image-item:hover .image-overlay {
 	opacity: 1;
