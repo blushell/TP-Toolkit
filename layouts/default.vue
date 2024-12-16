@@ -55,13 +55,14 @@
 				</v-list-group>
 
 				<!-- Market Items -->
-				<v-list-group v-model="openGroups" value="market">
+				<v-list-group
+					v-model="openGroups"
+					value="market"
+					:prepend-icon="'mdi-storefront-outline'"
+					:title="'Goodies'"
+				>
 					<template v-slot:activator="{ props }">
-						<v-list-item
-							v-bind="props"
-							prepend-icon="mdi-storefront-outline"
-							title="Goodies"
-						/>
+						<v-list-item v-bind="props" />
 					</template>
 
 					<v-list-item
