@@ -138,8 +138,8 @@ const baseURL = config.public.baseURL || '';
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
-		? `${baseURL}/img/TPTK_Black.png`
-		: `${baseURL}/img/TPTK_White.png`;
+		? 'https://blushell.github.io/TP-Toolkit/img/TPTK_Black.png'
+		: 'https://blushell.github.io/TP-Toolkit/img/TPTK_White.png';
 });
 
 const socialLinks = [
