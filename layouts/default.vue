@@ -55,11 +55,21 @@
 				</v-list-group>
 
 				<!-- Market Items -->
-				<v-list-item
-					v-for="item in marketNavItems"
-					:key="item.title"
-					v-bind="item"
-				/>
+				<v-list-group value="market">
+					<template v-slot:activator="{ props }">
+						<v-list-item
+							v-bind="props"
+							prepend-icon="mdi-storefront-outline"
+							title="Goodies"
+						/>
+					</template>
+
+					<v-list-item
+						v-for="item in marketNavItems"
+						:key="item.title"
+						v-bind="item"
+					/>
+				</v-list-group>
 			</v-list>
 
 			<!-- Donate Button -->

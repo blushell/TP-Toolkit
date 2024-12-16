@@ -64,9 +64,21 @@ export function useNavigation() {
 
 	const marketNavItems = [
 		{
-			title: 'Stream Goodies',
+			title: 'TP Plugins',
+			description: 'Plugins to use in your Touch Portal',
+			to: '/goodies/plugins',
+			prependIcon: 'mdi-toy-brick-outline',
+		},
+		{
+			title: 'Marketplace',
+			description: 'Premium products to help you with your streams',
+			to: '/goodies/marketplace',
+			prependIcon: 'mdi-cart-outline',
+		},
+		{
+			title: 'Freebies',
 			description: 'Download free resources for your streams',
-			to: '/goodies',
+			to: '/goodies/extras',
 			prependIcon: 'mdi-gift-outline',
 		},
 	];
