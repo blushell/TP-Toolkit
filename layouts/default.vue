@@ -55,7 +55,7 @@
 				</v-list-group>
 
 				<!-- Market Items -->
-				<v-list-group value="market">
+				<v-list-group v-model="openGroups" value="market">
 					<template v-slot:activator="{ props }">
 						<v-list-item
 							v-bind="props"
@@ -141,7 +141,7 @@ const {
 	toggleDrawer,
 } = useNavigation();
 const { showScrollButton, scrollToTop } = useScroll();
-const openGroups = ref(['tools']);
+const openGroups = ref(['market']);
 
 const config = useRuntimeConfig();
 const baseURL = config.public.baseURL || '';
