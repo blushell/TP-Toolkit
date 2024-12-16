@@ -142,8 +142,7 @@ const {
 } = useNavigation();
 const { showScrollButton, scrollToTop } = useScroll();
 
-const config = useRuntimeConfig();
-const baseURL = config.public.baseURL || '';
+const baseURL = '/TP-Toolkit';
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
