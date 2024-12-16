@@ -133,17 +133,14 @@ const {
 const { showScrollButton, scrollToTop } = useScroll();
 const openGroups = ref(['tools']);
 
-/* const config = useRuntimeConfig(); */
-const baseURL = import.meta.env.VITE_BASE_URL;
-console.log('Base URL:', baseURL);
+const config = useRuntimeConfig();
+const baseURL = config.public.baseURL || '';
 
 const logoPath = computed(() => {
 	return theme.value === 'light'
 		? `${baseURL}/img/TPTK_Black.png`
 		: `${baseURL}/img/TPTK_White.png`;
 });
-
-console.log('Logo Path:', logoPath.value);
 
 const socialLinks = [
 	{
